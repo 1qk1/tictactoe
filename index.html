@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Tic tac toe</title>
+<meta name="author" content="Panagiotis Skarlas">
+<meta name="description" content="Tic tac toe">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="style.css">
+<link href="blzee.ttf" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+
+</head>
+<body>
+<div class="gamecontainer">
+    <div id="choose">
+        <h3>I want to play as</h3>
+        <button class="btn btn-outline-light" data-value="X">X</button>
+        <button class="btn btn-outline-light" data-value="O">O</button>
+    </div>
+    <table>
+        <tr>
+            <td id="cellN0" data-value="0"><span id="cellN0s" ></span></td>
+            <td id="cellN1" data-value="1" class="horizontal"><span id="cellN1s" ></span></td>
+            <td id="cellN2" data-value="2"><span id="cellN2s" ></span></td>
+        </tr>
+        <tr>
+            <td id="cellN3" data-value="3" class="vertical"><span id="cellN3s" ></span></td>
+            <td id="cellN4" data-value="4" class="horizontal vertical"><span id="cellN4s" ></span></td>
+            <td id="cellN5" data-value="5" class="vertical"><span id="cellN5s" ></span></td>
+        </tr>
+        <tr>
+            <td id="cellN6" data-value="6"><span id="cellN6s"></span></td>
+            <td id="cellN7" data-value="7" class="horizontal"><span id="cellN7s"></span></td>
+            <td id="cellN8" data-value="8"><span id="cellN8s"></span></td>
+        </tr>
+    </table>
+    <div id="winscreen">
+        <h3></h3>
+        <button class="btn btn-outline-light">Play again!</button>
+    </div>
+
+</div>
+<div class="card mt-5 border-success mx-auto">
+    <div class="card-body">
+        <p class="d-inline mr-5 text-left">Player Score: <span id="playerScores" class="d-inline">0</span></p>
+        <p class="d-inline mr-5 text-center">Bot Score: <span id="botScores" class="d-inline">0</span></p>
+        <button class="btn btn-outline-success float-right" id="resetBtn">Reset Scores</button>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
